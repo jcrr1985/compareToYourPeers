@@ -1,0 +1,701 @@
+html, body {
+	height: 100%;
+	width: 100%;
+
+}
+
+.gosh {
+	height: 0;
+	overflow: hidden;
+}
+
+.showNext {
+	animation: showNextAnimate 2s forwards;
+}
+
+.hideLast {
+	animation: hideLastAnimate 2s forwards;
+}
+
+@keyframes showNextAnimate{
+			0%{
+				height: 0;				
+			}
+			100%{
+				height: 100%
+			}
+		}
+
+	@keyframes hideLastAnimate{
+			0%{
+				height: 100%;
+			}
+			100%{
+				height: 0%;				
+			}
+		}
+
+
+/* Begin First Page*/
+
+*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+	
+		}
+		
+		p.standardP{
+			color: #fff;
+			font-family: univers;
+			font-size: 1.666rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin: 1rem 1;
+			margin-top: 30px;
+
+		}
+		
+		.mainDiv{
+
+			width: auto;
+		}
+		
+		#choose{
+			background-color: #00a3a1;
+			padding: 2px;
+			font-family: KPMG Extralight;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+
+		.fa-chevron-right{
+			-webkit-transform: scale(4);
+			-moz-transform: scale(4);
+		-ms-transform  			
+			 tramsform: scale(4);
+position: relative;scale(4)
+			top: -10px;
+			left: -15px;
+		}
+		
+		.clickmeP{
+			color: white;
+			font-size: 60px;
+		
+		}
+		
+		div.mainDiv p{
+			 word-wrap: break-word;
+		  	 line-height: 100%;
+		}
+		
+		.consumers{
+			position: relative;
+			top: 118px;
+			left: 177px;
+			min-width: 386px;
+			max-width: 367px;
+		}
+		
+		@keyframes flickerBg{
+			0%{
+				background-color: #00a1a3;
+			}
+			
+			50%{
+					background-color: #6D2077;
+			}
+			
+			100%{
+				background-color: #00a1a3;
+			}
+		}
+		
+		.flickerBg{
+			animation: flickerBg .9s linear 1s; 
+			transition: all .5s
+		}
+		
+		#ballon {
+			position: relative;
+			top: -354px;
+			left: 82px;
+			width: 100%;
+			height: 100%;
+		}
+		
+		#boyBallon{
+			transform: translate(46px,80px);
+		}
+		
+		#womanBallon{
+			transform: translate(-35px,261px);
+		}
+		
+		#kidBallon{
+			transform: translate(469px,229px) rotate(415deg);
+		}
+		
+		#girlBallon{
+			transform: translate(384px,41px) rotate(415deg);
+		}
+		
+/*		@keyframes womanBallonPopUp{
+			0%{
+			transform: translate(125px,261px) scale(0.01);
+			}
+			
+			80%{
+			transform: translate(125px,261px) scale(0.01);
+			}
+			
+			100%{
+				transform: translate(-8px,164px);
+			}
+		}*/
+		
+		#womanBallon{
+			animation: womanBallonPopUp 1s ease-in 2s forwards;
+		}
+		
+		br{
+			line-height: 1.5;
+		}
+
+		#choose:hover{
+			cursor:pointer
+		}
+
+/* End First Page*/
+
+/*Begin Second Page*/
+
+		*{
+			font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		
+		h3.mainTitle{
+			color: #fff;
+			font-family: KPMG Extralight;
+			margin-top: 32px;
+			margin-bottom: 2rem;
+			font-size: 51px;
+			font-weight: bolder;
+			margin-left: 52px;
+		}
+		
+		p.standardP{
+			color: #fff;
+			font-family: univers;
+			font-size: 1.666rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin: 1rem 1;
+			margin-top: 30px;
+
+		}
+		
+		.mainDiv{
+
+			width: auto;
+		}
+			
+		.clickmeP{
+			color: white;
+			font-size: 60px;	
+		}
+		
+		ul{
+			list-style-type: none;
+		}
+		
+		label{
+
+			width: 95.5%;
+			height: 100%;
+			padding: 0.85rem 1rem;
+			background-color: hsla(0,0%,100%,.6);
+			color: #fff;
+			cursor: pointer;
+			border-radius: 4px;
+			margin-bottom: 11px;
+			margin-left: 9px;
+			transition: all .4s;
+			font-size: 1.6rem;
+		}
+		
+		label:hover{
+			background-color: white;
+			color: #00338d;
+			transition: all .5s
+		}
+		
+		input{
+			display: none;
+		
+		}
+		
+		#chartdiv {
+			width: 100%;
+			height: 150px;
+			font-size: 11px;
+		}	
+		
+		a{
+			display:none!important;
+		}
+		
+		#chartdiv{
+			display: none;
+		}
+
+.labelSelected{
+	background-color: #FFF;
+	color: #00338D;
+}
+
+.labelUnselected{
+	background-color: hsla(0,0%,100%,.6);
+	color: #fff;
+}
+
+/*End Second Page*/
+
+/* Begin Third Page*/
+
+*{
+			font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+
+		}
+		
+		h3.mainTitle{
+			color: #fff;
+			font-family: KPMG Extralight;
+			margin-top: 32px;
+			margin-bottom: 2rem;
+			font-size: 51px;
+			font-weight: bolder;
+			margin-left: 52px;
+		}
+		
+		p.standardP{
+			color: #fff;
+			font-family: univers;
+			font-size: 1.666rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin: 1rem 1;
+			margin-top: 30px;
+
+		}
+		
+		.mainDiv{
+
+			width: auto;
+		}
+		
+		
+		.clickmeP{
+			color: white;
+			font-size: 60px;
+		
+		}
+		
+		ul{
+			list-style-type: none;
+		}
+		
+		label{
+
+			width: 95.5%;
+			height: 100%;
+			
+			padding: 0.85rem 1rem;
+			background-color: hsla(0,0%,100%,.6);
+			color: #fff;
+			cursor: pointer;
+			border-radius: 4px;
+			margin-bottom: 11px;
+			margin-left: 9px;
+			font-size: 1.6rem;
+			transition: all .4s;
+		}
+		
+		label:hover{
+			background-color: white;
+			color: #00338d;
+			transition: all .5s;
+		}
+		
+		input{
+			display: none;
+		
+		}
+
+
+
+/* End Third Page */
+
+/* Begin Fourth Page*/
+
+
+		*{
+			font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+	
+		}
+		
+		h3.mainTitle{
+			color: #fff;
+			font-family: KPMG Extralight;
+			margin-top: 32px;
+			margin-bottom: 2rem;
+			font-size: 51px;
+			font-weight: bolder;
+			margin-left: 52px;
+		}
+		
+		p.standardP{
+			color: #fff;
+			font-family: univers;
+			font-size: 1.666rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin: 1rem 1;
+			margin-top: 30px;
+
+		}
+		
+		.mainDiv{
+
+			width: auto;
+		}
+		
+		
+		.clickmeP{
+			color: white;
+			font-size: 60px;
+		
+		}
+		
+		ul{
+			list-style-type: none;
+		}
+		
+		label{
+
+			width: 95.5%;
+			height: 100%;
+			
+			padding: 0.85rem 1rem;
+			background-color: hsla(0,0%,100%,.6);
+			color: #fff;
+			cursor: pointer;
+			border-radius: 4px;
+			margin-bottom: 11px;
+			margin-left: 9px;
+			transition: all .4s;
+			font-size: 1.6rem;
+		}
+		
+		label:hover{
+			background-color: white;
+			color: #00338d;
+			transition: all .5s
+		}
+		
+		input{
+			display: none;
+		
+		}
+
+
+/* End Fourth Page */
+
+/* Begin Fifth Page*/
+
+*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+	
+		}
+		
+		p.mainTitle{
+			color: #fff;
+			font-size: 115px;
+			font-family: KPMG Extralight;
+			margin-top: 5px;
+		}
+		
+		p.standardP{
+			color: #fff;
+			font-family: univers;
+			font-size: 1.666rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin: 1rem 1;
+			margin-top: 30px;
+
+		}
+		
+		.mainDiv{
+
+			width: auto;
+		}
+		
+		#choose{
+			background-color: #00a3a1;
+			padding: 2px;
+			font-family: KPMG Extralight;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+
+		.fa-chevron-right{
+			transform: scale(4);
+			position: relative;
+			top: -10px;
+			left: -15px;
+		}
+		
+		.clickmeP{
+			color: white;
+			font-size: 60px;
+		
+		}
+		
+		div.mainDiv p{
+			 word-wrap: break-word;
+		  	 line-height: 100%;
+		}
+		
+		.consumers{
+			position: relative;
+			top: 218px;
+			left: 143px;
+			min-width: 386px;
+			max-width: 367px;
+		}
+		
+		@keyframes flickerBg{
+			0%{
+				background-color: #00a1a3;
+			}
+			
+			50%{
+					background-color: #6D2077;
+			}
+			
+			100%{
+				background-color: #00a1a3;
+			}
+		}
+		
+		.flickerBg{
+			animation: flickerBg .9s linear 1s; 
+			transition: all .5s
+		}
+		
+
+		.padTop{
+			padding-top: 150px;
+		}
+		
+		.buttons{
+			width: 4rem;
+			height: 4rem;
+			color: #000;
+			border: 1px solid #fff;
+			line-height: 1;
+			z-index: 99;
+			border-radius: 100%;
+			background: #fff;
+		}
+		.lastRow{
+			margin-top: 125px;
+		}
+		
+		.triangleRight{
+			transform: translate(91px,89px) scale(.4);
+		}
+		
+		.triangleLeft{
+			transform: translate(60px,89px) scale(.4);
+		}
+
+
+/* End Fithf Page */
+
+/* First Result */
+
+.firstChartP{
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	margin-top: -9px;
+	color: #fff;
+}
+
+#chartdiv {
+	width: 100%;
+	height: 500px;
+	font-size: 11px;
+	display: block!important;
+	margin-top: -60px;
+}	
+
+.svgCirc1Div{
+	display: inline-block;
+}
+
+.barButton {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	opacity: 0;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+#barColor{
+  width:0px;
+  height:100%;
+  display:inline-block;
+}
+
+.barFixBottom {
+	
+	animation: appear 1s 2s forwards;
+}
+
+@keyframes appear{
+			0%{
+				opacity:0;				
+			}
+			100%{
+				opacity: 1;
+			}
+		}
+
+
+
+#chartdiv2 {
+	width: 500px;
+ height: 400px;
+ margin: auto;
+}
+
+#answer2 {
+		width: 100%;
+		height: 400px;
+}
+
+#choose, .mainDiv, .standardP{
+	margin-left: 8%;
+	margin-top: 7%;
+}
+
+#fourthPage{
+
+}
+
+/*.barBtn4{
+position: relative;
+top: 2%;
+}
+
+.barBtn3{
+	position: relative;
+	top: 35%;
+}
+
+.barBtn2{
+	position: relative;
+	top: 14%;	
+}
+
+
+
+.fifthBar{
+	position: absolute;
+top: 4%
+}
+
+.lastBar{
+	position: relative;
+	top: 10%;
+}*/
+
+.bar{
+  width:0px;
+  height:15px;
+  background-color:#00a3a1;
+  display:inline-block;
+	position: relative;
+	top: 35%;
+	left: 2px;
+}
+
+.button{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  cursor:pointer;
+  border:1px solid #CCCCCC;
+  background-color:#FFFFFF;
+  display:inline-block;
+}
+
+
+.container-fluid {
+	position: relative;
+}
+
+#bar{
+	display: inline-block;
+ height: 25px;
+ background: white;
+ text-align: left;
+ 
+}
+
+
+@media screen and (max-width: 1367px) {
+  p.mainTitle {
+    font-size: 100px;
+  }
+}
+
+g {
+	 opacity: 1!important;
+}
+

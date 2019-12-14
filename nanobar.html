@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+	<style>
+		
+.bar{
+  width:0px;
+  height:15px;
+  background-color:#00a3a1;
+  display:inline-block;
+}
+
+.button{
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  cursor:pointer;
+  border:1px solid #CCCCCC;
+  background-color:#FFFFFF;
+  display:inline-block;
+}
+		
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+
+	<div class="bar"></div> <br><br>
+
+	<div class="button">
+		Next
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			$(".button").click(function(){
+			$(".bar").animate({
+				width: "+=100px"
+			},"fast");  
+		  })
+		})
+	</script>
+	
+</body>
+</html>

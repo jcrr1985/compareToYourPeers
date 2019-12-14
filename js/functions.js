@@ -1,6 +1,8 @@
 var pageNow = 1;
 var maxPage = 6;
 
+
+
 function showNext() {
 	$("#Page" + pageNow).removeClass('hideLast, showNext');
 	$("#Page" + pageNow++).addClass('hideLast');   

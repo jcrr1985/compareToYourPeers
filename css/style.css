@@ -582,32 +582,7 @@ div.mainDiv p {
 #fourthPage {
 }
 
-/*.barBtn4{
-position: relative;
-top: 2%;
-}
 
-.barBtn3{
-	position: relative;
-	top: 35%;
-}
-
-.barBtn2{
-	position: relative;
-	top: 14%;	
-}
-
-
-
-.fifthBar{
-	position: absolute;
-top: 4%
-}
-
-.lastBar{
-	position: relative;
-	top: 10%;
-}*/
 
 .mainRow{
 	height: 100vh;
@@ -757,3 +732,32 @@ g {
 }
 
   
+@media screen and (max-width:400px) and (max-width: 571px) {
+
+
+
+
+    p.mainTitle {
+		font-size: 50px;	
+	  }
+
+	 #Page4 #Layer_1 {
+		transform: translateY(100px) scale(1.5);
+	}
+	  .leftCol{
+		align-items: center;
+	  }
+
+	  #choose{
+		min-height: 90px;
+		max-height: 90px;
+		width: 270px;
+	  }
+
+	  .clickmeP {
+		
+		font-size: 50px;
+	  
+	  
+	  }
+  }

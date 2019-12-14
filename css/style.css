@@ -67,6 +67,7 @@ p.standardP {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9999;
 }
 
 .fa-chevron-right {
@@ -112,6 +113,7 @@ div.mainDiv p {
 .flickerBg {
   animation: flickerBg 0.9s linear 1s;
   transition: all 0.5s;
+
 }
 
 #ballon {
@@ -479,6 +481,7 @@ div.mainDiv p {
 .flickerBg {
   animation: flickerBg 0.9s linear 1s;
   transition: all 0.5s;
+  z-index: 9999;
 }
 
 .padTop {
@@ -632,6 +635,7 @@ g {
 
 #choose{
 	min-height: 120px;
+	z-index: 9999!important;
 }
 
 
@@ -733,10 +737,6 @@ g {
 
   
 @media screen and (max-width:400px) and (max-width: 571px) {
-
-
-
-
     p.mainTitle {
 		font-size: 50px;	
 	  }
@@ -754,10 +754,7 @@ g {
 		width: 270px;
 	  }
 
-	  .clickmeP {
-		
-		font-size: 50px;
-	  
-	  
+	  .clickmeP {		
+		font-size: 50px;  	  
 	  }
   }
